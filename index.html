@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mumbrella Tools</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #ececec;
+      color: #1a1a1a;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1a1a1a;
+      padding: 0 28px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,.35);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header a.logo-link { display: flex; align-items: center; }
+    header img.logo { height: 22px; display: block; }
+
+    header .divider { width: 1px; height: 24px; background: #444; }
+
+    header h1 {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 24px;
+    }
+
+    .section-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 16px;
+    }
+
+    .tools {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .tool-link {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: #111;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .tool-link:hover {
+      border-color: #2ec4c4;
+      box-shadow: 0 2px 8px rgba(46, 196, 196, 0.15);
+    }
+
+    .tool-link .thumb {
+      width: 52px;
+      height: 52px;
+      border-radius: 11px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    .tool-link .info h2 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      margin-bottom: 4px;
+    }
+
+    .tool-link .info span {
+      font-size: 0.78rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a class="logo-link" href="index.html">
+      <img class="logo" src="Mumbrella Tools logo.png" alt="Mumbrella Tools">
+    </a>
+    <div class="divider"></div>
+    <h1>Tools</h1>
+  </header>
+
+  <main>
+    <p class="section-title">All tools</p>
+    <div class="tools">
+      <a class="tool-link" href="https://web-production-3e30b.up.railway.app/">
+        <img class="thumb" src="https://web-production-3e30b.up.railway.app/static/apple-touch-icon.png" alt="">
+        <div class="info">
+          <h2>Unmade Indexer</h2>
+          <span>web-production-3e30b.up.railway.app</span>
+        </div>
+      </a>
+      <a class="tool-link" href="https://comp-watch-production-d458.up.railway.app/">
+        <img class="thumb" src="https://comp-watch-production-d458.up.railway.app/static/apple-touch-icon.png" alt="">
+        <div class="info">
+          <h2>Comp Watch</h2>
+          <span>comp-watch-production-d458.up.railway.app</span>
+        </div>
+      </a>
+      <a class="tool-link" href="https://picture-fixer-production.up.railway.app/">
+        <img class="thumb" src="https://picture-fixer-production.up.railway.app/favicon-180.png" alt="">
+        <div class="info">
+          <h2>Picture Fixer</h2>
+          <span>picture-fixer-production.up.railway.app</span>
+        </div>
+      </a>
+    </div>
+  </main>
+
+</body>
+</html>
